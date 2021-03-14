@@ -22,9 +22,9 @@ return [
             // 数据库类型
             'type'              => Env::get('database.type', 'mysql'),
             // 服务器地址
-            'hostname'          => Env::get('database.hostname', 'host.docker.internal'),
+            'hostname'          => Env::get('database.hostname', '127.0.0.1'),
             // 数据库名
-            'database'          => Env::get('database.database', 'easyadmin'),
+            'database'          => Env::get('database.database', 'mango'),
             // 用户名
             'username'          => Env::get('database.username', 'root'),
             // 密码
@@ -36,7 +36,7 @@ return [
             // 数据库编码默认采用utf8
             'charset'           => Env::get('database.charset', 'utf8'),
             // 数据库表前缀
-            'prefix'            => Env::get('database.prefix', 'ea_'),
+            'prefix'            => Env::get('database.prefix', 'm_'),
 
             // 数据库部署方式:0 集中式(单一服务器),1 分布式(主从服务器)
             'deploy'            => 0,
